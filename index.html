@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fast Food Cafe - Pakistan's Favorite Local Fast Food</title>
+  <meta name="description" content="Fast Food Cafe - Delicious Pakistani Zinger Burgers, Chicken Tikka Pizza, Crispy Hot Wings, Kulfa Ice Cream and Chilled Pakola. Authentic local taste, 100% Halal.">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar d-none d-md-block">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex gap-4">
+          <span class="top-bar-item"><i class="bi bi-geo-alt-fill text-warning"></i> Gulberg III, Lahore & Saddar, Karachi</span>
+          <span class="top-bar-item"><i class="bi bi-clock-fill text-warning"></i> Open Daily: 12:00 PM - 02:00 AM (Late Night)</span>
+        </div>
+        <div class="d-flex gap-4">
+          <span class="top-bar-item"><i class="bi bi-shield-check text-success"></i> 100% Halal Certified</span>
+          <span class="top-bar-item"><i class="bi bi-telephone-fill text-warning"></i> <a href="tel:+923001234567">+92 300 1234567</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-icon">
+          <i class="bi bi-fire"></i>
+        </div>
+        <div class="brand-title">
+          <span class="main-name">Fast Food Cafe</span>
+          <span class="sub-name">Pakistani Local Taste</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-1 text-danger"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="order.html">Order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <a class="nav-cta-btn" href="order.html">
+              <i class="bi bi-bag-check-fill"></i>
+              <span>Order Online</span>
+              <span class="cart-counter-badge">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Outside and Inside Cafe Views -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <!-- Hero Text -->
+        <div class="col-lg-6">
+          <div class="hero-badge">
+            <i class="bi bi-patch-check-fill"></i> Authentic Local Fast Food in Pakistan
+          </div>
+          <h1 class="hero-title">
+            Asli Desi Crispy Zaika, <br>
+            <span>Fast Food Cafe</span> Ka Maza!
+          </h1>
+          <p class="hero-subtitle">
+            Experience Pakistan's beloved street-style and gourmet fast food! From extra crispy Zinger burgers and sizzling Chicken Tikka pizzas to fiery hot wings, ice-cold Pakola, and royal Kulfa ice cream.
+          </p>
+          <div class="hero-buttons">
+            <a href="order.html" class="btn-primary-custom">
+              <i class="bi bi-lightning-charge-fill"></i> Order Now Online
+            </a>
+            <a href="menu.html" class="btn-secondary-custom">
+              <i class="bi bi-book-half"></i> Explore Full Menu
+            </a>
+          </div>
+
+          <!-- Quick Stats -->
+          <div class="hero-stats">
+            <div class="hero-stat-item">
+              <h4>100%</h4>
+              <p>Halal & Fresh</p>
+            </div>
+            <div class="hero-stat-item">
+              <h4>30 Mins</h4>
+              <p>Hot Fast Delivery</p>
+            </div>
+            <div class="hero-stat-item">
+              <h4>50k+</h4>
+              <p>Happy Foodies</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Cafe Visuals: Outside & Inside Visual Showcase -->
+        <div class="col-lg-6">
+          <div class="cafe-ambiance-card">
+            <span class="ambiance-badge" id="ambiance-display-badge">
+              <i class="bi bi-geo-alt-fill text-warning"></i> Cafe Outside View
+            </span>
+            <img 
+              id="ambiance-display-img"
+              src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1000&auto=format&fit=crop&q=80" 
+              alt="Fast Food Cafe Exterior and Interior" 
+              class="ambiance-carousel-img"
+            >
+            <div class="ambiance-caption-bar">
+              <h5 id="ambiance-display-title">Fast Food Cafe - Outdoor & Entrance View</h5>
+              <p id="ambiance-display-text">Welcoming exterior facade with illuminated neon signs, spacious takeaway counter, and easy parking.</p>
+            </div>
+          </div>
+
+          <!-- Dual View Toggle Buttons (Outside & Inside) -->
+          <div class="dual-view-toggle">
+            <button class="toggle-btn active" id="view-outside-btn" onclick="switchAmbianceView('outside')">
+              <i class="bi bi-shop"></i> View Outside Cafe
+            </button>
+            <button class="toggle-btn" id="view-inside-btn" onclick="switchAmbianceView('inside')">
+              <i class="bi bi-cup-hot"></i> View Inside Sitting Area
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Features Banner -->
+  <section class="features-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-sm-6">
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <i class="bi bi-patch-check"></i>
+            </div>
+            <div>
+              <h6>100% Halal Ingredients</h6>
+              <p>Clean meat, unadulterated oils, and fresh local spices.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <i class="bi bi-fire"></i>
+            </div>
+            <div>
+              <h6>Made Fresh to Order</h6>
+              <p>Never frozen, sizzling hot burgers and pizzas prepared live.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <i class="bi bi-bicycle"></i>
+            </div>
+            <div>
+              <h6>Superfast Delivery</h6>
+              <p>Doorstep delivery across major Pakistani sectors.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <i class="bi bi-moon-stars"></i>
+            </div>
+            <div>
+              <h6>Late Night Cafe</h6>
+              <p>Serving your midnight hunger till 2:00 AM every night.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Menu Categories Showcase -->
+  <section class="py-5">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-sub-badge">What We Serve</span>
+        <h2 class="section-title">Explore Our Flavor Packed Specials</h2>
+        <p class="section-desc">Handcrafted Pakistani fast food staples crafted with mouthwatering flavors and unmatched crispiness.</p>
+      </div>
+
+      <div class="row g-4 mb-4">
+        <!-- Category Card 1: Burger -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 position-relative">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=80" class="card-img" style="height: 250px; object-fit: cover;" alt="Zinger Burger">
+            <div class="card-img-overlay d-flex flex-column justify-content-end" style="background: linear-gradient(to top, rgba(0,0,0,0.85) 20%, transparent);">
+              <span class="badge bg-danger w-auto mb-2 px-3 py-1 align-self-start">Starting Rs. 240</span>
+              <h4 class="text-white fw-bold mb-1">Crispy Burgers & Shami</h4>
+              <p class="text-light small mb-3">Zinger Supreme, Anda Shami, Smoky Beef & Chapli Burgers.</p>
+              <a href="menu.html" class="btn btn-sm btn-warning fw-bold rounded-pill align-self-start">View Burgers</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category Card 2: Pizza -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 position-relative">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&auto=format&fit=crop&q=80" class="card-img" style="height: 250px; object-fit: cover;" alt="Chicken Tikka Pizza">
+            <div class="card-img-overlay d-flex flex-column justify-content-end" style="background: linear-gradient(to top, rgba(0,0,0,0.85) 20%, transparent);">
+              <span class="badge bg-danger w-auto mb-2 px-3 py-1 align-self-start">Starting Rs. 950</span>
+              <h4 class="text-white fw-bold mb-1">Cheesy Desi Pizzas</h4>
+              <p class="text-light small mb-3">Chicken Tikka, Fajita Feast, Crown Crust & Cheese Lover.</p>
+              <a href="menu.html" class="btn btn-sm btn-warning fw-bold rounded-pill align-self-start">View Pizzas</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category Card 3: Hot Wings -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 position-relative">
+            <img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=600&auto=format&fit=crop&q=80" class="card-img" style="height: 250px; object-fit: cover;" alt="Hot Wings">
+            <div class="card-img-overlay d-flex flex-column justify-content-end" style="background: linear-gradient(to top, rgba(0,0,0,0.85) 20%, transparent);">
+              <span class="badge bg-danger w-auto mb-2 px-3 py-1 align-self-start">Starting Rs. 390</span>
+              <h4 class="text-white fw-bold mb-1">Crispy Hot Wings</h4>
+              <p class="text-light small mb-3">Golden Crunchy, Spicy Buffalo & Honey BBQ Glazed Wings.</p>
+              <a href="menu.html" class="btn btn-sm btn-warning fw-bold rounded-pill align-self-start">View Wings</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category Card 4: Ice Cream -->
+        <div class="col-lg-6 col-md-6">
+          <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 position-relative">
+            <img src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=600&auto=format&fit=crop&q=80" class="card-img" style="height: 230px; object-fit: cover;" alt="Ice Cream">
+            <div class="card-img-overlay d-flex flex-column justify-content-end" style="background: linear-gradient(to top, rgba(0,0,0,0.85) 20%, transparent);">
+              <span class="badge bg-warning text-dark w-auto mb-2 px-3 py-1 align-self-start">Starting Rs. 240</span>
+              <h4 class="text-white fw-bold mb-1">Traditional Ice Cream & Sundaes</h4>
+              <p class="text-light small mb-3">Peshawari Kulfa with Pistachio, Belgian Chocolate Fudge & Chaunsa Mango.</p>
+              <a href="menu.html" class="btn btn-sm btn-light fw-bold rounded-pill align-self-start">Explore Ice Creams</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category Card 5: Cold Drinks -->
+        <div class="col-lg-6 col-md-12">
+          <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 position-relative">
+            <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=600&auto=format&fit=crop&q=80" class="card-img" style="height: 230px; object-fit: cover;" alt="Cold Drinks">
+            <div class="card-img-overlay d-flex flex-column justify-content-end" style="background: linear-gradient(to top, rgba(0,0,0,0.85) 20%, transparent);">
+              <span class="badge bg-warning text-dark w-auto mb-2 px-3 py-1 align-self-start">Starting Rs. 90</span>
+              <h4 class="text-white fw-bold mb-1">Chilled Cold Drinks & Mocktails</h4>
+              <p class="text-light small mb-3">Authentic Pakola Can, Zesty Mint Margarita & Rooh Afza Milkshake.</p>
+              <a href="menu.html" class="btn btn-sm btn-light fw-bold rounded-pill align-self-start">Explore Drinks</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Items Grid (Dynamic via JS) -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-sub-badge">Top Picks</span>
+        <h2 class="section-title">Most Ordered at Fast Food Cafe</h2>
+        <p class="section-desc">Hand-picked bestsellers loved by our loyal customers across Lahore, Karachi & Islamabad.</p>
+      </div>
+
+      <div class="row" id="featured-items-grid">
+        <!-- Populated dynamically via JS -->
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="menu.html" class="btn-primary-custom">
+          <span>View All Items & Prices</span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Deals Banner -->
+  <section class="py-5">
+    <div class="container">
+      <div class="deal-card">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <span class="deal-tag">Limited Time Hot Offer</span>
+            <h3>Lahori Midnight Hunger Deal 🌙</h3>
+            <p>1x Zinger Supreme Burger + 1x Medium Chicken Tikka Pizza + 4x Crispy Hot Wings + 2x Chilled Cold Drinks or Pakola Cans.</p>
+            <div class="deal-price-row">
+              <span class="deal-curr-price">Rs. 1,699</span>
+              <span class="deal-old-price">Rs. 2,250</span>
+              <span class="badge bg-warning text-dark fw-bold px-3 py-2 rounded-pill">Save Rs. 551</span>
+            </div>
+            <a href="order.html" class="btn btn-warning btn-lg fw-bold rounded-pill px-4 text-dark shadow">
+              <i class="bi bi-cart-fill me-2"></i> Order This Deal Now
+            </a>
+          </div>
+          <div class="col-lg-5 text-center mt-4 mt-lg-0">
+            <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=600&auto=format&fit=crop&q=80" alt="Special Deal Combo" class="img-fluid rounded-4 shadow-lg border border-warning" style="max-height: 280px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pakistani Customer Reviews -->
+  <section class="py-5">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-sub-badge">Word on the Street</span>
+        <h2 class="section-title">Loved by Pakistani Foodies</h2>
+        <p class="section-desc">Check out what real customers have to say about our fast food cafe experience.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="story-box">
+            <div class="rating-stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="story-quote">"Fast Food Cafe ka Zinger burger KFC sy kahin behtar hai! Extra crispy patty, authentic spicy sauce aur bun bilkul fresh. Unka Tikka pizza bhi bohot lazeez hai."</p>
+            <div class="customer-info">
+              <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&auto=format&fit=crop&q=80" alt="Hamza Malik" class="customer-avatar">
+              <div>
+                <div class="customer-name">Hamza Malik</div>
+                <div class="customer-city">Gulberg III, Lahore</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="story-box">
+            <div class="rating-stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="story-quote">"The ambiance inside is very neat and clean, perfect for family dining. Hot wings are properly spiced and having chilled Pakola with dinner is the ultimate Pakistani vibe!"</p>
+            <div class="customer-info">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80" alt="Ayesha Tariq" class="customer-avatar">
+              <div>
+                <div class="customer-name">Ayesha Tariq</div>
+                <div class="customer-city">DHA Phase 5, Karachi</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="story-box">
+            <div class="rating-stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill-half"></i>
+            </div>
+            <p class="story-quote">"Ordered late night at 1:15 AM in Islamabad and the food was delivered piping hot in 25 minutes! Crown Crust pizza and Kulfa ice cream were 10/10."</p>
+            <div class="customer-info">
+              <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=100&auto=format&fit=crop&q=80" alt="Bilal Siddiqui" class="customer-avatar">
+              <div>
+                <div class="customer-name">Bilal Siddiqui</div>
+                <div class="customer-city">F-7 Sector, Islamabad</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Brand Info -->
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="brand-icon">
+              <i class="bi bi-fire"></i>
+            </div>
+            <span class="fs-4 fw-bold text-white">Fast Food Cafe</span>
+          </div>
+          <p class="text-secondary small">
+            Your neighborhood Pakistani fast food haven. Serving crispy Zinger burgers, hot cheesy pizzas, sizzling chicken wings, and refreshing drinks prepared with 100% Halal fresh ingredients.
+          </p>
+          <div class="social-icons">
+            <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="https://wa.me/923001234567" class="social-icon-btn text-success" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="col-lg-2 col-md-6">
+          <h5>Quick Pages</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+            <li><a href="menu.html"><i class="bi bi-chevron-right"></i> Food Menu</a></li>
+            <li><a href="order.html"><i class="bi bi-chevron-right"></i> Order Online</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact Us</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right"></i> Food Blogs</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Popular Menu Items -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Our Specialties</h5>
+          <ul class="footer-links">
+            <li><a href="menu.html"><i class="bi bi-dot"></i> Chicken Tikka Pizza</a></li>
+            <li><a href="menu.html"><i class="bi bi-dot"></i> Crispy Zinger Supreme</a></li>
+            <li><a href="menu.html"><i class="bi bi-dot"></i> Desi Anda Shami Burger</a></li>
+            <li><a href="menu.html"><i class="bi bi-dot"></i> Spicy Buffalo Hot Wings</a></li>
+            <li><a href="menu.html"><i class="bi bi-dot"></i> Peshawari Kulfa Ice Cream</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Timing -->
+        <div class="col-lg-3 col-md-6 footer-contact-info">
+          <h5>Visit / Call Us</h5>
+          <p><i class="bi bi-geo-alt-fill text-danger"></i> Main Boulevard, Gulberg III, Lahore, Pakistan</p>
+          <p><i class="bi bi-telephone-fill text-warning"></i> +92 300 1234567 / +92 321 7654321</p>
+          <p><i class="bi bi-envelope-fill text-primary"></i> order@fastfoodcafe.pk</p>
+          <p><i class="bi bi-clock-fill text-secondary"></i> Open 7 Days: 12:00 PM – 2:00 AM</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+        <p class="mb-2 mb-md-0">© 2026 <strong>Fast Food Cafe Pakistan</strong>. All rights reserved.</p>
+        <p class="mb-0 text-secondary">Crafted with ❤️ for Pakistani Food Lovers</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="app-toast" class="custom-toast"></div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main Script -->
+  <script src="js/main.js"></script>
+</body>
+</html>

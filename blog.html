@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Blog & Food Stories - Fast Food Cafe Pakistan</title>
+  <meta name="description" content="Discover Pakistani food stories, secrets behind crispy zinger burgers, chicken tikka pizza recipes, and the late-night cafe culture in Lahore and Karachi.">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar d-none d-md-block">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex gap-4">
+          <span class="top-bar-item"><i class="bi bi-geo-alt-fill text-warning"></i> Gulberg III, Lahore & Saddar, Karachi</span>
+          <span class="top-bar-item"><i class="bi bi-clock-fill text-warning"></i> Open Daily: 12:00 PM - 02:00 AM (Late Night)</span>
+        </div>
+        <div class="d-flex gap-4">
+          <span class="top-bar-item"><i class="bi bi-shield-check text-success"></i> 100% Halal Certified</span>
+          <span class="top-bar-item"><i class="bi bi-telephone-fill text-warning"></i> <a href="tel:+923001234567">+92 300 1234567</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-icon">
+          <i class="bi bi-fire"></i>
+        </div>
+        <div class="brand-title">
+          <span class="main-name">Fast Food Cafe</span>
+          <span class="sub-name">Pakistani Local Taste</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-1 text-danger"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="order.html">Order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <a class="nav-cta-btn" href="order.html">
+              <i class="bi bi-bag-check-fill"></i>
+              <span>Order Online</span>
+              <span class="cart-counter-badge">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header Banner -->
+  <section class="py-5 text-center text-white position-relative" style="background: linear-gradient(rgba(18, 20, 29, 0.88), rgba(18, 20, 29, 0.88)), url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1600&auto=format&fit=crop&q=80') center/cover no-repeat;">
+    <div class="container py-4">
+      <span class="badge bg-danger px-3 py-2 text-uppercase mb-2 fw-bold">Foodie Chronicles</span>
+      <h1 class="display-5 fw-bold text-white mb-2">Cafe Diaries & Food Stories</h1>
+      <p class="lead text-light mb-0 mx-auto" style="max-width: 650px;">
+        Explore the flavors, spices, and culture behind our burgers, desi pizzas, sizzling hot wings, and the irresistible late-night food scenes of Pakistan.
+      </p>
+    </div>
+  </section>
+
+  <!-- Blog Cards Section -->
+  <section class="py-5">
+    <div class="container">
+      
+      <div class="row g-4">
+        
+        <!-- Blog Post 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-card">
+            <div class="blog-img-holder">
+              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=80" alt="Crispy Zinger" class="blog-img">
+              <span class="blog-badge">Burger Secrets</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3 me-1"></i> October 2026</span>
+                <span><i class="bi bi-clock me-1"></i> 4 min read</span>
+              </div>
+              <h4 class="blog-title">
+                <a href="javascript:void(0)" onclick="openBlogModal('zinger')">The Secret Behind Our Crunchy Pakistani Zinger Patty</a>
+              </h4>
+              <p class="blog-snippet">
+                Why does our Zinger burger have that unmistakable, golden rippled crust? Discover the dual-dip batter technique and 12 desi spices that elevate every single bite.
+              </p>
+              <button class="btn btn-sm btn-outline-danger fw-bold rounded-pill align-self-start" onclick="openBlogModal('zinger')">
+                Read Full Story <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-card">
+            <div class="blog-img-holder">
+              <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&auto=format&fit=crop&q=80" alt="Chicken Tikka Pizza" class="blog-img">
+              <span class="blog-badge">Desi Italian</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3 me-1"></i> October 2026</span>
+                <span><i class="bi bi-clock me-1"></i> 5 min read</span>
+              </div>
+              <h4 class="blog-title">
+                <a href="javascript:void(0)" onclick="openBlogModal('pizza')">Why Chicken Tikka Pizza is Pakistan’s True Comfort Food</a>
+              </h4>
+              <p class="blog-snippet">
+                From Karachi to Islamabad, no pizza topping beats charcoal-marinated Chicken Tikka with fresh rings of onion, green chilies, and creamy garlic drizzle.
+              </p>
+              <button class="btn btn-sm btn-outline-danger fw-bold rounded-pill align-self-start" onclick="openBlogModal('pizza')">
+                Read Full Story <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-card">
+            <div class="blog-img-holder">
+              <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=600&auto=format&fit=crop&q=80" alt="Anda Shami Burger" class="blog-img">
+              <span class="blog-badge">Street Heritage</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3 me-1"></i> October 2026</span>
+                <span><i class="bi bi-clock me-1"></i> 3 min read</span>
+              </div>
+              <h4 class="blog-title">
+                <a href="javascript:void(0)" onclick="openBlogModal('shami')">The Nostalgic Magic of Anda Shami Burger & Karak Chai</a>
+              </h4>
+              <p class="blog-snippet">
+                Before international chains invaded, the humble bun kabab was king. Learn how we honor this Pakistani classic with authentic daal-beef patties and mint chutney.
+              </p>
+              <button class="btn btn-sm btn-outline-danger fw-bold rounded-pill align-self-start" onclick="openBlogModal('shami')">
+                Read Full Story <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Post 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-card">
+            <div class="blog-img-holder">
+              <img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=600&auto=format&fit=crop&q=80" alt="Hot Wings" class="blog-img">
+              <span class="blog-badge">Wings & Spice</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3 me-1"></i> September 2026</span>
+                <span><i class="bi bi-clock me-1"></i> 4 min read</span>
+              </div>
+              <h4 class="blog-title">
+                <a href="javascript:void(0)" onclick="openBlogModal('wings')">Crispy vs Buffalo Hot Wings: How We Spice Things Up</a>
+              </h4>
+              <p class="blog-snippet">
+                Do you prefer the pure dry golden crunch, or the fiery kick of buffalo glaze that leaves your lips tingling? Here is how we balance Pakistani spice heat.
+              </p>
+              <button class="btn btn-sm btn-outline-danger fw-bold rounded-pill align-self-start" onclick="openBlogModal('wings')">
+                Read Full Story <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Post 5 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-card">
+            <div class="blog-img-holder">
+              <img src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=600&auto=format&fit=crop&q=80" alt="Kulfa Ice Cream" class="blog-img">
+              <span class="blog-badge">Desi Sweet</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3 me-1"></i> September 2026</span>
+                <span><i class="bi bi-clock me-1"></i> 3 min read</span>
+              </div>
+              <h4 class="blog-title">
+                <a href="javascript:void(0)" onclick="openBlogModal('kulfa')">Peshawari Kulfa: The Sweet Cooling Antidote to Fiery Fast Food</a>
+              </h4>
+              <p class="blog-snippet">
+                After devouring a spicy burger or fiery wings, nothing brings bliss like thick creamy rabri kulfa loaded with roasted pistachios, almonds, and saffron essence.
+              </p>
+              <button class="btn btn-sm btn-outline-danger fw-bold rounded-pill align-self-start" onclick="openBlogModal('kulfa')">
+                Read Full Story <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Post 6 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-card">
+            <div class="blog-img-holder">
+              <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&auto=format&fit=crop&q=80" alt="Late Night Cafe" class="blog-img">
+              <span class="blog-badge">Cafe Culture</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3 me-1"></i> September 2026</span>
+                <span><i class="bi bi-clock me-1"></i> 5 min read</span>
+              </div>
+              <h4 class="blog-title">
+                <a href="javascript:void(0)" onclick="openBlogModal('latenight')">The Midnight Cafe Phenomenon: Why Pakistanis Love 1 AM Feasts</a>
+              </h4>
+              <p class="blog-snippet">
+                When the rest of the world goes to sleep, Pakistani cities come alive with sizzling griddles, flashing neon signs, and friendly get-togethers until 2:00 AM.
+              </p>
+              <button class="btn btn-sm btn-outline-danger fw-bold rounded-pill align-self-start" onclick="openBlogModal('latenight')">
+                Read Full Story <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Newsletter Banner -->
+      <div class="mt-5 p-4 p-md-5 rounded-4 shadow-sm text-center position-relative overflow-hidden" style="background: linear-gradient(135deg, #1e222d, #12141d); color: #fff;">
+        <div class="position-relative z-1" style="max-width: 600px; margin: 0 auto;">
+          <h3 class="fw-bold mb-2">Join Fast Food Cafe VIP Club 🎁</h3>
+          <p class="text-light small mb-4">Get exclusive discount vouchers, secret midnight deals, and new menu alerts straight to your inbox or WhatsApp.</p>
+          <form class="d-flex flex-column flex-sm-row gap-2" onsubmit="event.preventDefault(); showToast('Shukriya! You are now subscribed to Fast Food Cafe alerts.'); this.reset();">
+            <input type="email" class="form-control form-control-custom" placeholder="Enter your email address..." required style="background: #fff;">
+            <button type="submit" class="btn btn-danger fw-bold rounded-pill px-4 text-nowrap">Subscribe Free</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Blog Article Details Modal -->
+  <div class="modal fade" id="blogDetailModal" tabindex="-1" aria-labelledby="blogDetailModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+        <div class="position-relative">
+          <img id="modal-blog-img" src="" alt="Blog Cover" style="width: 100%; height: 260px; object-fit: cover;">
+          <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3 p-2 bg-dark rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4 p-md-5">
+          <span id="modal-blog-category" class="badge bg-danger mb-2">Category</span>
+          <h3 id="modal-blog-title" class="fw-bold mb-3">Blog Title</h3>
+          <div id="modal-blog-content" class="text-secondary leading-relaxed">
+            <!-- Dynamic Content -->
+          </div>
+          <div class="border-top pt-3 mt-4 d-flex justify-content-between align-items-center">
+            <span class="text-muted small">Share with food buddies:</span>
+            <div class="d-flex gap-2">
+              <a href="https://wa.me/?text=Check+out+this+story+from+Fast+Food+Cafe!" target="_blank" class="btn btn-sm btn-success rounded-pill px-3"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+              <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill px-3" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Brand Info -->
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="brand-icon">
+              <i class="bi bi-fire"></i>
+            </div>
+            <span class="fs-4 fw-bold text-white">Fast Food Cafe</span>
+          </div>
+          <p class="text-secondary small">
+            Your neighborhood Pakistani fast food haven. Serving crispy Zinger burgers, hot cheesy pizzas, sizzling chicken wings, and refreshing drinks prepared with 100% Halal fresh ingredients.
+          </p>
+          <div class="social-icons">
+            <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="https://wa.me/923001234567" class="social-icon-btn text-success" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="col-lg-2 col-md-6">
+          <h5>Quick Pages</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+            <li><a href="menu.html"><i class="bi bi-chevron-right"></i> Food Menu</a></li>
+            <li><a href="order.html"><i class="bi bi-chevron-right"></i> Order Online</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact Us</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right"></i> Food Blogs</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Popular Menu Items -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Our Specialties</h5>
+          <ul class="footer-links">
+            <li><a href="menu.html"><i class="bi bi-dot"></i> Chicken Tikka Pizza</a></li>
+            <li><a href="menu.html"><i class="bi bi-dot"></i> Crispy Zinger Supreme</a></li>
+            <li><a href="menu.html"><i class="bi bi-dot"></i> Desi Anda Shami Burger</a></li>
+            <li><a href="menu.html"><i class="bi bi-dot"></i> Spicy Buffalo Hot Wings</a></li>
+            <li><a href="menu.html"><i class="bi bi-dot"></i> Peshawari Kulfa Ice Cream</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Timing -->
+        <div class="col-lg-3 col-md-6 footer-contact-info">
+          <h5>Visit / Call Us</h5>
+          <p><i class="bi bi-geo-alt-fill text-danger"></i> Main Boulevard, Gulberg III, Lahore, Pakistan</p>
+          <p><i class="bi bi-telephone-fill text-warning"></i> +92 300 1234567 / +92 321 7654321</p>
+          <p><i class="bi bi-envelope-fill text-primary"></i> order@fastfoodcafe.pk</p>
+          <p><i class="bi bi-clock-fill text-secondary"></i> Open 7 Days: 12:00 PM – 2:00 AM</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+        <p class="mb-2 mb-md-0">© 2026 <strong>Fast Food Cafe Pakistan</strong>. All rights reserved.</p>
+        <p class="mb-0 text-secondary">Crafted with ❤️ for Pakistani Food Lovers</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="app-toast" class="custom-toast"></div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main Script -->
+  <script src="js/main.js"></script>
+
+  <!-- Blog Detail Modal Script -->
+  <script>
+    const BLOG_STORIES = {
+      zinger: {
+        title: "The Secret Behind Our Crunchy Pakistani Zinger Patty",
+        category: "Burger Secrets",
+        image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&auto=format&fit=crop&q=80",
+        content: `
+          <p>Every fast food lover in Pakistan knows that a mediocre burger simply won't cut it. When you bite into our <strong>Zinger Supreme</strong>, you hear that unmistakable crunch before tasting the succulent, moist chicken inside.</p>
+          <p>Here is what makes our method special:</p>
+          <ul>
+            <li><strong>24-Hour Buttermilk & Spices Marination:</strong> We marinate whole chicken thigh fillets in fresh yogurt, crushed red chilies, garlic paste, white pepper, and black salt.</li>
+            <li><strong>Double Flour Shake:</strong> We don't press the flour down; we shake it in cold water and seasoned flour to create the signature crispy flakes and ripples.</li>
+            <li><strong>Fresh Pure Oil:</strong> Clean, unadulterated high smoke-point vegetable oil, temperature monitored at 175°C.</li>
+          </ul>
+          <p>Served with our homemade spicy garlic sauce in a freshly toasted sesame bun, it is the ultimate Pakistani fast food burger experience.</p>
+        `
+      },
+      pizza: {
+        title: "Why Chicken Tikka Pizza is Pakistan’s True Comfort Food",
+        category: "Desi Italian",
+        image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&auto=format&fit=crop&q=80",
+        content: `
+          <p>While traditional Italian pizzas focus on mozzarella and basil, in Pakistan, pizza reached a whole new legendary dimension when paired with authentic <strong>Chicken Tikka boti</strong>.</p>
+          <p>At Fast Food Cafe, our Chicken Tikka pizza features hand-stretched artisan dough brushed with garlic herb butter, layered with zesty spiced tomato sauce, loaded with charcoal-smoked chicken cubes, diced red onions, crunchy bell peppers, and melted premium mozzarella.</p>
+          <p>Finished with a squeeze of lemon and chatpata sprinkle, it captures everything Pakistanis love about good food!</p>
+        `
+      },
+      shami: {
+        title: "The Nostalgic Magic of Anda Shami Burger & Karak Chai",
+        category: "Street Heritage",
+        image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=800&auto=format&fit=crop&q=80",
+        content: `
+          <p>Long before western chains arrived in Pakistan, the Anda Shami burger (or Bun Kabab) was the heart of evening gatherings at street corners and local cafe tables.</p>
+          <p>We craft our shami patty with slow-cooked chana daal, minced beef, cumin, whole red chilies, and coriander seeds. Fried in a golden egg wash and tucked into a warm bun with sliced red onions and cooling mint-coriander raita chutney, it's pure comfort nostalgia.</p>
+        `
+      },
+      wings: {
+        title: "Crispy vs Buffalo Hot Wings: How We Spice Things Up",
+        category: "Wings & Spice",
+        image: "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=800&auto=format&fit=crop&q=80",
+        content: `
+          <p>Whether you're hosting a cricket match watch party or craving a midnight snack, hot wings are an absolute must-have.</p>
+          <p>At Fast Food Cafe, we offer three iconic variations: Golden Crunchy Wings for those who love crisp textures, Honey BBQ Glazed Wings with sweet smoked undertones, and our Fiery Buffalo Wings tossed in fresh lemon and local red chili peppers that pack a true punch.</p>
+        `
+      },
+      kulfa: {
+        title: "Peshawari Kulfa: The Sweet Cooling Antidote to Fiery Fast Food",
+        category: "Desi Sweet",
+        image: "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=800&auto=format&fit=crop&q=80",
+        content: `
+          <p>No hearty Pakistani meal is complete without a sweet finish. Our Royal Peshawari Kulfa is made the traditional way with slow-simmered whole milk, cardamom, saffron, and crushed pistachios.</p>
+          <p>It provides the ultimate smooth, creamy contrast after enjoying a fiery Zinger or spicy pizza slice.</p>
+        `
+      },
+      latenight: {
+        title: "The Midnight Cafe Phenomenon: Why Pakistanis Love 1 AM Feasts",
+        category: "Cafe Culture",
+        image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&fit=crop&q=80",
+        content: `
+          <p>In Lahore, Karachi, and Islamabad, nighttime is when the magic begins. Friends gather after university classes or office shifts, craving hot food and great conversations.</p>
+          <p>Fast Food Cafe stays open every single day until 2:00 AM, ensuring you always have a safe, clean, welcoming place to relax with hot fries, burgers, and chilled drinks.</p>
+        `
+      }
+    };
+
+    function openBlogModal(key) {
+      const story = BLOG_STORIES[key];
+      if (!story) return;
+      document.getElementById('modal-blog-img').src = story.image;
+      document.getElementById('modal-blog-title').textContent = story.title;
+      document.getElementById('modal-blog-category').textContent = story.category;
+      document.getElementById('modal-blog-content').innerHTML = story.content;
+      const modal = new bootstrap.Modal(document.getElementById('blogDetailModal'));
+      modal.show();
+    }
+  </script>
+</body>
+</html>
